@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/messageTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Google Play Services Status"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:padding="10sp"/>
+
+  <Button
+    android:id="@+id/logTokenButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Log Token"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/subscribeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Subscribe to Notifications"
+    android:textAllCaps="false"/>
+
+</LinearLayout>
