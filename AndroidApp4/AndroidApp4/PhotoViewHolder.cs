@@ -18,10 +18,12 @@ namespace AndroidApp4
         public ImageView Image { get; set; }
         public TextView Caption { get; set; }
 
-        public PhotoViewHolder(View itemView) : base(itemView)
+        public PhotoViewHolder(View itemView, Action<int> itemClickCallback) : base(itemView)
         {
             this.Image = itemView.FindViewById<ImageView>(Resource.Id.imageView);
             this.Caption = itemView.FindViewById<TextView>(Resource.Id.textView);
+
+            itemView.Click += (sender, e) => itemClickCallback(this.LayoutPosition);
         }
     }
 }

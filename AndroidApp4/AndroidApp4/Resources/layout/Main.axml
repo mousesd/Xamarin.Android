@@ -3,7 +3,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  
+
+  <Button
+    android:id="@+id/randomPickButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="Random Pick"
+    android:textAllCaps="false"
+    android:textAppearance="?android:attr/textAppearanceLarge"/>
   <android.support.v7.widget.RecyclerView
     android:id="@+id/recyclerView"
     android:layout_width="match_parent"
