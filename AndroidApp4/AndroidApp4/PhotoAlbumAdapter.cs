@@ -8,15 +8,13 @@ namespace AndroidApp4
     {
         public event EventHandler<ItemClickEventArgs> ItemClick;
 
-        #region == Fields & Constructors ==
         private readonly PhotoAlbum photoAlbum;
+
         public PhotoAlbumAdapter(PhotoAlbum photoAlbum)
         {
             this.photoAlbum = photoAlbum;
         }
-        #endregion
 
-        #region == Override members of the RecyclerView.Adapter class ==
         public override int ItemCount
         {
             get { return photoAlbum.PhotoCount; }
@@ -36,7 +34,6 @@ namespace AndroidApp4
             viewHolder.Image.SetImageResource(photoAlbum[position].PhotoResourceId);
             viewHolder.Caption.Text = photoAlbum[position].Caption;
         } 
-        #endregion
 
         protected virtual void OnItemClick(int position)
         {
@@ -47,6 +44,7 @@ namespace AndroidApp4
     public class ItemClickEventArgs
     {
         public Photo Photo { get; }
+
         public ItemClickEventArgs(Photo photo)
         {
             this.Photo = photo;
